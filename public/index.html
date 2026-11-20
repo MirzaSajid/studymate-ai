@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyMate AI</title>
+  <meta name="description" content="Turn your notes into summaries, quizzes, flashcards and simple explanations with AI.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>StudyMate <span>AI</span></h1>
+      <p>Paste your notes and let AI turn them into study material.</p>
+    </header>
+
+    <section class="card">
+      <label for="notes">Your notes</label>
+      <textarea id="notes" rows="9" maxlength="8000" placeholder="Paste lecture notes or any study text here (at least 40 characters)..."></textarea>
+      <div class="meta"><span id="counter">0 / 8000</span></div>
+
+      <div class="modes" role="group" aria-label="Study mode">
+        <button type="button" class="mode active" data-mode="summary">Summary</button>
+        <button type="button" class="mode" data-mode="quiz">Quiz</button>
+        <button type="button" class="mode" data-mode="flashcards">Flashcards</button>
+        <button type="button" class="mode" data-mode="explain">Explain simply</button>
+      </div>
+
+      <button type="button" id="generate" class="primary">Generate</button>
+    </section>
+
+    <div id="status" role="status" aria-live="polite"></div>
+    <section id="output" aria-live="polite"></section>
+
+    <footer>Built for Module 5 – AI Tools &amp; Mini Project. AI can make mistakes: verify important facts.</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

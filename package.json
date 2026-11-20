@@ -1,0 +1,14 @@
+{
+  "name": "studymate-ai",
+  "version": "1.0.0",
+  "description": "AI-powered study assistant: turn notes into summaries, quizzes, flashcards and simple explanations using the Google Gemini API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" },
+  "keywords": ["ai", "gemini", "study-assistant", "education", "nodejs"],
+  "author": "Sajid Hussain",
+  "license": "MIT"
+}
